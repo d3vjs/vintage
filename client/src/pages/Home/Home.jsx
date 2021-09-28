@@ -11,8 +11,8 @@ import { StyledDiv } from './HomeStyles';
 const Home = () => {
     return (
         <StyledDiv>
-            <Announcement />
             <Navbar />
+            <Announcement />
             <Slider />
             <Categories />
             <Products />
