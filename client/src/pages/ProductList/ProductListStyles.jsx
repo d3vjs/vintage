@@ -1,9 +1,7 @@
 import styled from 'styled-components';
 import tw from 'twin.macro';
 
-export const Container = styled.div`
-    ${tw``}
-`;
+export const Container = styled.div``;
 
 export const Title = styled.h1`
     margin: 20px;
@@ -16,7 +14,6 @@ export const FilterContainer = styled.div`
 
 export const Filter = styled.div`
     margin: 20px;
-    ${tw``}
 `;
 
 export const FilterText = styled.span`
@@ -27,6 +24,4 @@ export const Select = styled.select`
     ${tw`p-4 m-8 outline-none`};
 `;
 
-export const Option = styled.option`
-
-`;
+export const Option = styled.option``;
