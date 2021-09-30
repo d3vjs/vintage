@@ -8,7 +8,7 @@ import { Bottom, ButtonTop, Container, Details, HorizontalLine, Image, Info, Pri
 const Cart = () => {
     return (
         <Container>
-            <Navbar />
+            {/* <Navbar /> */}
             <Announcement />
             <Wrapper>
                 <Title>YOUR BAG</Title>
@@ -52,11 +52,11 @@ const Cart = () => {
                                     <ProductSize><b>Size: </b><span>M</span></ProductSize>
                                 </Details>
                             </ProductDetail>
-                            <PriceDetail>
+                            <PriceDetail type="price-amount">
                                 <ProductAmountContainer>
-                                    <MinusIcon className="w-6 h-6" />
+                                    <MinusIcon className="w-6 h-6 cursor-pointer" />
                                     <ProductAmount>2</ProductAmount>
-                                    <PlusIcon className="w-6 h-6" />
+                                    <PlusIcon className="w-6 h-6 cursor-pointer" />
                                 </ProductAmountContainer>
                                 <ProductPrice>$ 20</ProductPrice>
                             </PriceDetail>
@@ -66,7 +66,7 @@ const Cart = () => {
                         <SummaryTitle>ORDER SUMMARY</SummaryTitle>
                         <SummaryItem>
                             <SummaryItemText>Subtotal</SummaryItemText>
-                            <SummaryItemText>$ 70</SummaryItemText>
+                            <SummaryItemText>$ 80</SummaryItemText>
                         </SummaryItem>
                         <SummaryItem>
                             <SummaryItemText>Estimated Shipping</SummaryItemText>

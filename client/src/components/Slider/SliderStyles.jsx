@@ -1,10 +1,13 @@
 import styled from 'styled-components';
 import tw from 'twin.macro';
 
+import {mobile} from '../../breakpoints';
+
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/outline';
 
 export const Container = styled.div`
     ${tw`w-full h-screen relative flex overflow-hidden`}
+    ${mobile({display: 'none'})}
 `;
 
 export const Arrow = styled.div`

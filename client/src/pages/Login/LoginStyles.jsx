@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import tw from 'twin.macro';
+import { mobile } from '../../breakpoints';
 
 export const Container = styled.div`
     ${tw`w-screen h-screen flex items-center justify-center`};
@@ -14,6 +15,8 @@ export const Container = styled.div`
 
 export const Wrapper = styled.div`
     ${tw`p-12 bg-white w-1/3`};
+
+    ${mobile({width: "80%"})}
 `;
 
 export const Title = styled.h1`
@@ -38,4 +41,5 @@ export const Button = styled.button`
     width: 40%;
     background-color: teal;
     ${tw`px-4 py-4 mb-4 text-white cursor-pointer`};
+    ${mobile({padding: "10px 5px"})}
 `;

@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import tw from 'twin.macro';
+import { mobile } from '../../breakpoints';
 
 export const Container = styled.div`
     ${tw`flex-1 m-2 relative`}
@@ -8,6 +9,7 @@ export const Container = styled.div`
 
 export const Image = styled.img`
     ${tw`w-full h-full object-cover`}
+    ${mobile({ height: "40vh"})}
 `;
 
 export const Info = styled.div`

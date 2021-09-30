@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import tw from 'twin.macro';
 
+import {mobile} from '../../breakpoints';
+
 export const Container = styled.div`
     height: 60vh;
     background-color: #fcf5f5;
@@ -13,10 +15,12 @@ export const Title = styled.h1`
 
 export const Description = styled.div`
     ${tw`text-2xl font-bold mb-8`};
+    ${mobile({textAlign: "center"})}
 `;
 
 export const InputContainer = styled.div`
     ${tw`w-1/2 h-12 bg-white flex justify-between items-center border border-solid border-gray-200`};
+    ${mobile({width: "80%"})}
 `;
 
 export const Input = styled.input`

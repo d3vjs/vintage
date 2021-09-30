@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import tw from 'twin.macro';
+import { mobile } from '../../breakpoints';
 
 export const Container = styled.div`
     ${tw`w-screen h-screen flex items-center justify-center`};
@@ -10,11 +11,14 @@ export const Container = styled.div`
       url("/assets/misc/signup.jpeg")
         center;
     background-size: cover;
+
+    ${mobile({width: "auto", height: "100%", minHeight: "100vh", padding: "20px"})}
 `;
 
 export const Wrapper = styled.div`
     width: 50%;
     ${tw`p-12 bg-white`};
+    ${mobile({ width: "90%", height: "auto", padding: "20px"})}
 `;
 
 export const Title = styled.h1`
@@ -40,4 +44,5 @@ export const Button = styled.button`
     width: 40%;
     background-color: teal;
     ${tw`px-4 py-4 text-white cursor-pointer`};
+    ${mobile({padding: "10px 5px"})}
 `;

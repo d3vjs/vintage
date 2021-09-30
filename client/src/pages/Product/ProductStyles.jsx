@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import tw from 'twin.macro';
+import { mobile } from '../../breakpoints';
 
 export const Container = styled.div`
     ${tw``}
@@ -8,6 +9,8 @@ export const Container = styled.div`
 export const Wrapper = styled.div`
     padding: 50px;
     ${tw`flex`}
+
+    ${mobile({padding: "10px", flexDirection: "column"})}
 `;
 
 export const ImgContainer = styled.div`
@@ -17,11 +20,15 @@ export const ImgContainer = styled.div`
 export const Image = styled.img`
     height: 90vh;
     ${tw`w-full object-cover`}
+    
+    ${mobile({height: "40vh"})}
 `;
 
 export const InfoContainer = styled.div`
     padding: 0px 50px;
     ${tw`flex-1`}
+    
+    ${mobile({padding: "10px"})}
 `;
 
 export const Title = styled.h1`
@@ -38,6 +45,7 @@ export const Price = styled.span`
 
 export const FilterContainer = styled.div`
     ${tw`flex justify-between w-1/2 my-12`};
+    ${mobile({width: "100%"})}
 `;
 
 export const Filter = styled.div`
@@ -63,6 +71,8 @@ export const FilterSizeOption = styled.option``;
 
 export const AddContainer = styled.div`
     ${tw`flex items-center justify-between w-1/2`};
+    
+    ${mobile({width: "100%"})}
 `;
 
 export const AmountContainer = styled.div`

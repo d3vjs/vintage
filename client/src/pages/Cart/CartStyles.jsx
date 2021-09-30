@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import tw from 'twin.macro';
+import { mobile } from '../../breakpoints';
 
 export const Container = styled.div`
     ${tw``};
@@ -7,10 +8,12 @@ export const Container = styled.div`
 
 export const Wrapper = styled.div`
     ${tw`pb-24`};
+    
+    ${mobile({padding: "10px"})}
 `;
 
 export const Title = styled.h1`
-    ${tw`font-light text-center text-4xl`};
+    ${tw`font-light text-center text-4xl p-5`};
 `;
 
 export const Top = styled.h1`
@@ -21,10 +24,12 @@ export const ButtonTop = styled.button`
     ${tw`p-2 font-bold cursor-pointer`};
     background-color: ${props => props.type === "filled" ? "black" : "transparent"};
     color: ${props => props.type === "filled" && "white"};
+
+    ${mobile({margin: "5px"})}
 `;
 
 export const TopTexts = styled.div`
-    ${tw``};
+    ${mobile({display: "none"})}
 `;
 
 export const TopText = styled.span`
@@ -33,6 +38,7 @@ export const TopText = styled.span`
 
 export const Bottom = styled.h1`
     ${tw`flex justify-between`};
+    ${mobile({flexDirection: "column"})}
 `;
 
 export const Info = styled.div`
@@ -42,11 +48,14 @@ export const Info = styled.div`
 
 export const Product = styled.div`
     ${tw`flex justify-between`};
+    ${mobile({flexDirection: "column"})}
 `;
 
 export const ProductDetail = styled.div`
     ${tw`flex`};
     flex: 2;
+
+    ${mobile({maxWidth: '100%'})}
 `;
 
 export const Image = styled.img`
@@ -78,10 +87,12 @@ export const ProductSize = styled.span`
 
 export const PriceDetail = styled.div`
     ${tw`flex-1 flex flex-col items-center justify-center`};
+    ${mobile({ flexDirection: "row", justifyContent: "space-around"})}
 `;
 
 export const ProductAmountContainer = styled.div`
     ${tw`flex items-center mb-5`};
+    ${mobile({ justifyContent: "center", margin: "10px"})}
 `;
 
 export const ProductAmount = styled.div`
@@ -124,10 +135,6 @@ export const SummaryItemPrice = styled.span`
 export const SummaryButton = styled.button`
     ${tw`w-full p-2 bg-black text-white font-bold`};
 `;
-
-
-
-
 
 export const ButtonBottom = styled.button`
     ${tw``};

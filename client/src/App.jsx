@@ -10,9 +10,7 @@ import SignUp from './pages/SignUp/SignUp';
 
 const App = () => {
     return (
-        <div>
-            <Cart />
-        </div>
+        <Cart/>
     )
 }
 

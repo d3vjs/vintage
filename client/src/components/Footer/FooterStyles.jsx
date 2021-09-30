@@ -1,8 +1,10 @@
 import styled from 'styled-components';
 import tw from 'twin.macro';
+import { mobile } from '../../breakpoints';
 
 export const Container = styled.div`
     ${tw`flex`};
+    ${mobile({flexDirection: "column"})}
 `;
 
 export const Left = styled.div`
@@ -35,6 +37,7 @@ export const Image = styled.img`
 export const Center = styled.div`
     padding: 20px;
     ${tw`flex-1`};
+    ${mobile({display: "none"})}
 `;
 
 export const Title = styled.h3`
@@ -52,6 +55,8 @@ export const ListItem = styled.li`
 export const Right = styled.div`
     padding: 20px;
     ${tw`flex-1`};
+
+    ${mobile({backgroundColor: "#fff8f8"})}
 `;
 
 export const ContactItem = styled.div`
