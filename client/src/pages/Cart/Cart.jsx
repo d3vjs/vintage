@@ -8,7 +8,7 @@ import { Bottom, ButtonTop, Container, Details, HorizontalLine, Image, Info, Pri
 const Cart = () => {
     return (
         <Container>
-            {/* <Navbar /> */}
+            <Navbar />
             <Announcement />
             <Wrapper>
                 <Title>YOUR BAG</Title>
